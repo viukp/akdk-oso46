@@ -105,8 +105,8 @@
 
         qwerty_layer {
             bindings = <
-&kp JIS_LBKT  &kp JIS_RBKT   &kp W          &kp E          &kp R           &kp T           &kp Y          &kp U          &kp I          &kp O          &kp JIS_SEMI   &kp JIS_COLON
-&hm LSHFT Q   &hm LGUI A     &hm LALT S     &hm LCTRL D    &hm LSHFT F     &kp G           &kp H          &hm RSHFT J    &hm RCTRL K    &hm RALT L     &hm RGUI P     &hm RSHFT MINUS
+&kp JIS_LBKT  &kp JIS_RBKT   &kp W          &kp E          &kp R           &kp T           &kp Y          &kp U          &kp I          &kp O          &kp P          &kp MINUS
+&hm LSHFT Q   &hm LGUI A     &hm LALT S     &hm LCTRL D    &hm LSHFT F     &kp G           &kp H          &hm RSHFT J    &hm RCTRL K    &hm RALT L     &hm RGUI JIS_SEMI &hm RSHFT JIS_COLON
 &kp JIS_AT    &kp Z          &kp X          &kp C          &kp V           &kp B           &kp N          &kp M          &kp COMMA      &kp DOT        &kp SLASH      &kp JIS_BSLH
 &none         &none          &hm LSHFT ESC        &lt L_SHT TAB  &lt L_NUM SPACE &lt L_SHT BSPC  &lt L_SHT RET  &hm RSHIFT CAPS &none          &none
             >;
