@@ -86,9 +86,23 @@
             bindings = <&kp JIS_RPAR>; 
             layers = <L_DEF L_QWE>; 
         };
+        // 3 16の位置で 「
+        combo_lbkt { 
+            timeout-ms = <30>; 
+            key-positions = <14 16>; 
+            bindings = <&kp JIS_LBKT>; 
+            layers = <L_DEF L_QWE>; 
+        };
+        // 19 8の位置で 」
+        combo_rbkt { 
+            timeout-ms = <30>; 
+            key-positions = <19 8>; 
+            bindings = <&kp JIS_RBKT>; 
+            layers = <L_DEF L_QWE>; 
+        };
 
-        combo_to_qwerty { timeout-ms = <30>; key-positions = <14 15 16>; bindings = <&to L_QWE>; layers = <L_DEF>; };
-        combo_to_def    { timeout-ms = <30>; key-positions = <19 20 21>; bindings = <&to L_DEF>; layers = <L_QWE>; };
+        combo_to_qwerty { timeout-ms = <30>; key-positions = <25 26 27 28>; bindings = <&to L_QWE>; layers = <L_DEF>; };
+        combo_to_def    { timeout-ms = <30>; key-positions = <31 32 33 34>; bindings = <&to L_DEF>; layers = <L_QWE>; };
     };
 
     keymap {
@@ -96,9 +110,9 @@
 
         default_layer {
             bindings = <
-&kp JIS_SEMI  &kp JIS_COLON  &kp C          &kp L          &kp COMMA       &kp DOT         &kp F          &kp W          &kp H          &kp Y          &kp P          &kp V
+&kp JIS_UNDR  &kp JIS_CARET  &kp C          &kp L          &kp COMMA       &kp DOT         &kp F          &kp W          &kp H          &kp Y          &kp P          &kp V
 &hm LSHFT Q   &hm LGUI E     &hm LALT I     &hm LCTRL O    &hm LSHFT A     &kp U           &kp K          &hm RSHFT T    &hm RCTRL N    &hm RALT S     &hm RGUI R     &hm RSHFT J
-&kp JIS_AT    &kp X          &kp JIS_LBKT   &kp JIS_RBKT   &kp MINUS       &kp SLASH       &kp G          &kp D          &kp M          &kp Z          &kp B          &kp JIS_BSLH
+&kp JIS_AT    &kp X          &kp JIS_SEMI   &kp JIS_COLON   &kp MINUS       &kp SLASH       &kp G          &kp D          &kp M          &kp Z          &kp B          &kp JIS_BSLH
 &none         &none          &hm LSHFT ESC        &lt L_SHT TAB  &lt L_NUM SPACE &lt L_SHT BSPC  &lt L_SHT RET  &hm RSHIFT CAPS &none          &none
             >;
         };
@@ -115,17 +129,17 @@
         num_sym_layer {
             bindings = <
 &kp F1        &kp F2         &kp F3         &kp F4         &kp F5          &kp F6          &kp F7         &kp F8         &kp F9         &kp F10        &kp F11        &kp F12
-&hm LSHFT JIS_UNDR  &hm LGUI N1    &hm LALT N2    &hm LCTRL N3   &hm LSHFT N4    &kp N5          &kp N6         &hm RSHFT N7   &hm RCTRL N8   &hm RALT N9    &hm RGUI N0    &hm RSHFT JIS_CARET
-&none         &none          &none          &none          &none           &none           &none          &none          &none          &none          &none          &none
+&kp LSHFT  &hm LGUI N1    &hm LALT N2    &hm LCTRL N3   &hm LSHFT N4    &kp N5          &kp N6         &hm RSHFT N7   &hm RCTRL N8   &hm RALT N9    &hm RGUI N0    &kp RSHFT
+&kp LSHFT  &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT       &none           &none          &kp RSHFT      &kp RGUI       &kp RALT       &kp RCTRL      &kp RSHFT
 &none         &none          &hm LSHFT ESC        &lt L_SHT TAB  &lt L_SYS SPACE &lt L_SYS BSPC  &lt L_SHT RET  &hm RSHIFT CAPS &none          &none
             >;
         };
 
         shortcut_layer {
             bindings = <
-&none         &none          &kp LC(Z)      &kp LC(Y)      &none           &none           &kp HOME       &kp PG_UP      &kp UP         &kp PG_DN      &kp END        &none
-&kp LSHFT     &hm LGUI LC(A) &hm LALT LC(X) &hm LCTRL LC(C) &hm LSHFT LC(V) &none           &kp BSPC       &kp LEFT       &kp DOWN       &kp RIGHT      &kp DEL        &kp RCTRL
-&kp LSHFT     &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT       &none           &kp RET        &kp C_PREV     &kp C_PP       &kp C_NEXT     &kp INS        &none
+&none         &none          &kp LC(Z)      &kp LC(Y)      &none           &none           &kp HOME       &kp PG_UP      &kp UP         &kp PG_DN      &kp END        &kp RGUI
+&kp LSHFT     &hm LGUI LC(A) &hm LALT LC(X) &hm LCTRL LC(C) &hm LSHFT LC(V) &none           &kp BSPC       &kp LEFT       &kp DOWN       &kp RIGHT      &kp DEL        &kp RSHFT
+&kp LSHFT     &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT       &none           &kp RET        &kp C_PREV     &kp C_PP       &kp C_NEXT     &kp RALT        &kp RCTRL
 &none         &none          &hm LSHFT ESC        &lt L_SHT TAB  &lt L_SYS SPACE &lt L_SYS BSPC  &lt L_SHT RET  &hm RSHIFT CAPS &none          &none
             >;
         };
@@ -133,8 +147,8 @@
         system_layer {
             bindings = <
 &none         &none          &kp C_BRI_DN   &kp C_BRI_UP   &none           &none           &none          &none          &none          &none          &none          &none
-&kp LSHFT     &hm LGUI C_MUTE &hm LALT C_VOL_DN &hm LCTRL C_VOL_UP &hm LSHFT PSCRN &none   &none          &mkp LCLK      &mkp MCLK      &mkp RCLK      &none          &none
-&kp LSHFT     &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT       &none           &none          &none          &none          &none          &none          &none
+&kp LSHFT     &hm LGUI C_MUTE &hm LALT C_VOL_DN &hm LCTRL C_VOL_UP &hm LSHFT PSCRN &none   &none          &mkp LCLK      &mkp MCLK      &mkp RCLK      &kp RCTRL      &kp RSHFT
+&kp LSHFT     &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT       &none           &none          &kp RSHFT      &kp RGUI       &kp RALT       &kp RCTRL      &kp RSHFT
 &none         &none          &hm LSHFT ESC        &lt L_SHT TAB  &lt L_NUM SPACE &lt L_SHT BSPC  &lt L_SHT RET  &hm RSHIFT CAPS &none          &none
             >;
         };
