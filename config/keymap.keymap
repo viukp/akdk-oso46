@@ -89,7 +89,7 @@
         // 3 16の位置で 「
         combo_lbkt { 
             timeout-ms = <30>; 
-            key-positions = <14 16>; 
+            key-positions = <3 16>; 
             bindings = <&kp JIS_LBKT>; 
             layers = <L_DEF L_QWE>; 
         };
