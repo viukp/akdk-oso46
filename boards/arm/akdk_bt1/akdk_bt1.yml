@@ -1,6 +1,6 @@
 identifier: akdk_bt1
 name: akdk_bt1
-type: mcu
+type: board
 arch: arm
 toolchain:
   - zephyr
