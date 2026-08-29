@@ -87,8 +87,8 @@
             layers = <L_DEF L_QWE>; 
         };
 
-        combo_to_qwerty { timeout-ms = <30>; key-positions = <25 26 27 28>; bindings = <&to L_QWE>; layers = <L_DEF>; };
-        combo_to_def    { timeout-ms = <30>; key-positions = <31 32 33 34>; bindings = <&to L_DEF>; layers = <L_QWE>; };
+        combo_to_qwerty { timeout-ms = <30>; key-positions = <14 15 16>; bindings = <&to L_QWE>; layers = <L_DEF>; };
+        combo_to_def    { timeout-ms = <30>; key-positions = <19 20 21>; bindings = <&to L_DEF>; layers = <L_QWE>; };
     };
 
     keymap {
