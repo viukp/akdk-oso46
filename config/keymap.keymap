@@ -110,7 +110,7 @@
 
         default_layer {
             bindings = <
-&kp JIS_LBKT  &kp JIS_RBKT  &kp C          &kp L          &kp COMMA       &kp DOT         &kp F          &kp W          &kp H          &kp Y          &kp P          &kp V
+&kp LS(JIS_LBKT)  &kp LS(JIS_RBKT)  &kp C          &kp L          &kp COMMA       &kp DOT         &kp F          &kp W          &kp H          &kp Y          &kp P          &kp V
 &hm LSHFT Q   &hm LGUI E     &hm LALT I     &hm LCTRL O    &hm LSHFT A     &kp U           &kp K          &hm RSHFT T    &hm RCTRL N    &hm RALT S     &hm RGUI R     &hm RSHFT J
 &kp JIS_AT    &kp X          &kp JIS_SEMI   &kp JIS_COLON   &kp MINUS       &kp SLASH       &kp G          &kp D          &kp M          &kp Z          &kp B          &kp JIS_BSLH
 &none         &none          &hm LSHFT ESC        &lt L_SHT TAB  &lt L_NUM SPACE &lt L_SHT BSPC  &lt L_SHT RET  &hm RSHIFT CAPS &none          &none
@@ -120,8 +120,8 @@
         qwerty_layer {
             bindings = <
 &kp JIS_AT  &kp Q   &kp W          &kp E          &kp R           &kp T           &kp Y          &kp U          &kp I          &kp O          &kp P          &kp MINUS
-&hm LSHFT JIS_LBKT   &hm LGUI A     &hm LALT S     &hm LCTRL D    &hm LSHFT F     &kp G           &kp H          &hm RSHFT J    &hm RCTRL K    &hm RALT L     &hm RGUI JIS_SEMI &hm RSHFT JIS_COLON
-&kp JIS_RBKT   &kp Z          &kp X          &kp C          &kp V           &kp B           &kp N          &kp M          &kp COMMA      &kp DOT        &kp SLASH      &kp JIS_BSLH
+&hm LSHFT LS(JIS_LBKT)   &hm LGUI A     &hm LALT S     &hm LCTRL D    &hm LSHFT F     &kp G           &kp H          &hm RSHFT J    &hm RCTRL K    &hm RALT L     &hm RGUI JIS_SEMI &hm RSHFT JIS_COLON
+&kp LS(JIS_RBKT)   &kp Z          &kp X          &kp C          &kp V           &kp B           &kp N          &kp M          &kp COMMA      &kp DOT        &kp SLASH      &kp JIS_BSLH
 &none         &none          &hm LSHFT ESC        &lt L_SHT TAB  &lt L_NUM SPACE &lt L_SHT BSPC  &lt L_SHT RET  &hm RSHIFT CAPS &none          &none
             >;
         };
