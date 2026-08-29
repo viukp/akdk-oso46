@@ -86,6 +86,20 @@
             bindings = <&kp JIS_RPAR>; 
             layers = <L_DEF L_QWE>; 
         };
+        // 3 16の位置で 「
+        combo_lbkt { 
+            timeout-ms = <30>; 
+            key-positions = <3 16>; 
+            bindings = <&kp JIS_LBKT>; 
+            layers = <L_DEF L_QWE>; 
+        };
+        // 19 8の位置で 」
+        combo_rbkt { 
+            timeout-ms = <30>; 
+            key-positions = <19 8>; 
+            bindings = <&kp JIS_RBKT>; 
+            layers = <L_DEF L_QWE>; 
+        };
 
         combo_to_qwerty { timeout-ms = <30>; key-positions = <14 15 16>; bindings = <&to L_QWE>; layers = <L_DEF>; };
         combo_to_def    { timeout-ms = <30>; key-positions = <19 20 21>; bindings = <&to L_DEF>; layers = <L_QWE>; };
