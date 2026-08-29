@@ -86,20 +86,6 @@
             bindings = <&kp JIS_RPAR>; 
             layers = <L_DEF L_QWE>; 
         };
-        // 3 16の位置で 「
-        combo_lbkt { 
-            timeout-ms = <30>; 
-            key-positions = <3 16>; 
-            bindings = <&kp JIS_LBKT>; 
-            layers = <L_DEF L_QWE>; 
-        };
-        // 19 8の位置で 」
-        combo_rbkt { 
-            timeout-ms = <30>; 
-            key-positions = <19 8>; 
-            bindings = <&kp JIS_RBKT>; 
-            layers = <L_DEF L_QWE>; 
-        };
 
         combo_to_qwerty { timeout-ms = <30>; key-positions = <25 26 27 28>; bindings = <&to L_QWE>; layers = <L_DEF>; };
         combo_to_def    { timeout-ms = <30>; key-positions = <31 32 33 34>; bindings = <&to L_DEF>; layers = <L_QWE>; };
@@ -110,7 +96,7 @@
 
         default_layer {
             bindings = <
-&kp JIS_UNDR  &kp JIS_CARET  &kp C          &kp L          &kp COMMA       &kp DOT         &kp F          &kp W          &kp H          &kp Y          &kp P          &kp V
+&kp JIS_LBKT  &kp JIS_RBKT  &kp C          &kp L          &kp COMMA       &kp DOT         &kp F          &kp W          &kp H          &kp Y          &kp P          &kp V
 &hm LSHFT Q   &hm LGUI E     &hm LALT I     &hm LCTRL O    &hm LSHFT A     &kp U           &kp K          &hm RSHFT T    &hm RCTRL N    &hm RALT S     &hm RGUI R     &hm RSHFT J
 &kp JIS_AT    &kp X          &kp JIS_SEMI   &kp JIS_COLON   &kp MINUS       &kp SLASH       &kp G          &kp D          &kp M          &kp Z          &kp B          &kp JIS_BSLH
 &none         &none          &hm LSHFT ESC        &lt L_SHT TAB  &lt L_NUM SPACE &lt L_SHT BSPC  &lt L_SHT RET  &hm RSHIFT CAPS &none          &none
@@ -129,8 +115,8 @@
         num_sym_layer {
             bindings = <
 &kp F1        &kp F2         &kp F3         &kp F4         &kp F5          &kp F6          &kp F7         &kp F8         &kp F9         &kp F10        &kp F11        &kp F12
-&kp LSHFT  &hm LGUI N1    &hm LALT N2    &hm LCTRL N3   &hm LSHFT N4    &kp N5          &kp N6         &hm RSHFT N7   &hm RCTRL N8   &hm RALT N9    &hm RGUI N0    &kp RSHFT
-&kp LSHFT  &kp LGUI       &kp LALT       &kp LCTRL      &kp LSHFT       &none           &none          &kp RSHFT      &kp RGUI       &kp RALT       &kp RCTRL      &kp RSHFT
+&hm LSHFT JIS_TILDE  &hm LGUI N1    &hm LALT N2    &hm LCTRL N3   &hm LSHFT N4    &kp N5          &kp N6         &hm RSHFT N7   &hm RCTRL N8   &hm RALT N9    &hm RGUI N0    &hm RSHFT JIS_CARET
+&kp LS(JIS_AT)  &kp JIS_EXCL &kp JIS_DQUOT &kp JIS_HASH      &kp JIS_DLLR       &kp JIS_PRCNT &kp JIS_AMPS          &kp JIS_QUOT &kp JIS_LPAR &kp JIS_RPAR &kp JIS_QMARK &kp JIS_UNDR
 &none         &none          &hm LSHFT ESC        &lt L_SHT TAB  &lt L_SYS SPACE &lt L_SYS BSPC  &lt L_SHT RET  &hm RSHIFT CAPS &none          &none
             >;
         };
