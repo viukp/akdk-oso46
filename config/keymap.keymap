@@ -73,16 +73,16 @@
         combo_quot { timeout-ms = <20>; key-positions = <19 21>;  bindings = <&kp JIS_QUOT>; layers = <L_DEF L_QWE>; };
 
         // 短押し=LANG / 長押し=Ctrl+Alt
-        combo_lang1 { timeout-ms = <30>; key-positions = <20 21>; bindings = <&mt LC(LALT) LANG1>; layers = <L_DEF L_QWE>; };
+        combo_lang1 { timeout-ms = <30>; key-positions = <20 21>; bindings = <&mt RC(RALT) LANG1>; layers = <L_DEF L_QWE>; };
         combo_lang2 { timeout-ms = <30>; key-positions = <14 15>; bindings = <&mt LC(LALT) LANG2>; layers = <L_DEF L_QWE>; };
 
         // 短押し=レイヤー切り替え / 長押し=Ctrl+Shift+Alt
-        combo_to_def    { timeout-ms = <20>; key-positions = <19 20 21>; bindings = <&ht_combo LC(LS(LALT)) L_DEF>; layers = <L_QWE>; };
+        combo_to_def    { timeout-ms = <20>; key-positions = <19 20 21>; bindings = <&ht_combo RC(RS(RALT)) L_DEF>; layers = <L_QWE>; };
         combo_to_qwerty { timeout-ms = <20>; key-positions = <14 15 16>; bindings = <&ht_combo LC(LS(LALT)) L_QWE>; layers = <L_DEF>; };
 
         // 短押し=カッコ / 長押し=Ctrl+Shift
         combo_lpar { timeout-ms = <20>; key-positions = <15 16>; bindings = <&mt LC(LSHIFT) JIS_LPAR>; layers = <L_DEF L_QWE>; };
-        combo_rpar { timeout-ms = <20>; key-positions = <19 20>; bindings = <&mt LC(LSHIFT) JIS_RPAR>; layers = <L_DEF L_QWE>; };
+        combo_rpar { timeout-ms = <20>; key-positions = <19 20>; bindings = <&mt RC(RSHIFT) JIS_RPAR>; layers = <L_DEF L_QWE>; };
     };
 
     keymap {
