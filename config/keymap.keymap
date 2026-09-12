@@ -22,7 +22,8 @@
 #define JIS_QMARK LS(SLASH)
 #define JIS_UNDR  LS(INT1)
 #define JIS_PIPE  LS(INT3)
-#define JIS_BSLH  INT3
+#define JIS_BSLH  INT1
+#define JIS_JPYEN  INT3
 #define JIS_AT    LBKT
 #define JIS_LBKT  RBKT
 #define JIS_RBKT  NON_US_HASH
@@ -109,7 +110,7 @@
             bindings = <
 &kp F1               &kp F2        &kp F3         &hm LC(LS(LALT)) F4  &kp F5        &kp F6          &kp F7         &kp F8        &hm LC(LS(LALT)) F9  &kp F10       &kp F11        &kp F12
 &hm LSHFT JIS_TILDE  &hm LGUI N1   &hm LALT N2    &hm LCTRL N3          &hm LSHFT N4  &kp N5          &kp N6         &hm RSHFT N7  &hm RCTRL N8          &hm RALT N9   &hm RGUI N0    &hm RSHFT JIS_CARET
-&kp LS(JIS_AT)       &kp JIS_EXCL  &kp JIS_DQUOT  &kp JIS_HASH          &kp JIS_DLLR  &kp JIS_PRCNT   &kp JIS_AMPS   &kp JIS_QUOT  &kp JIS_LPAR          &kp JIS_RPAR  &kp JIS_QMARK  &kp JIS_UNDR
+&kp LS(JIS_AT)       &kp JIS_EXCL  &kp JIS_DQUOT  &kp JIS_HASH          &kp JIS_DLLR  &kp JIS_PRCNT   &kp JIS_AMPS   &kp JIS_QUOT  &kp JIS_LPAR          &kp JIS_RPAR  &kp JIS_QMARK  &kp JIS_PIPE
 &none                &none         &trans         &lt L_SYS TAB         &trans        &lt L_SYS BSPC  &lt L_SYS RET  &trans        &none                 &none
             >;
         };
